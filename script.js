@@ -1,6 +1,8 @@
 // JavaScript Document
 function getinput() {
-input = document.getElementById("inputbox").value;
+if (!(document.getElementById("inputbox").value == "")) {
+	input = document.getElementById("inputbox").value;
+}
 }
 
 function showresult() {
@@ -29,12 +31,6 @@ function fraction2decimal() {
 	getinput();
 	solution = math.number(math.fraction(input));
 	showconversionresult()
-}
-
-function decimal2fraction() {
-	getinput();
-	solution =  math.fraction(math.number(input));
-	showconversionresult();
 }
 
 function round() {
